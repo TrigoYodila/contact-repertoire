@@ -1,4 +1,20 @@
+/* === Traitement upload image */
+const inputImage = document.querySelector('.inputImage')
+const imageProfil = document.querySelector('.previewImage')
 
+inputImage.addEventListener('change', (e) => {
+
+    const file = e.target.files[0]
+
+    if(file){
+        // créer l'url de l'image
+        const imgUrl = URL.createObjectURL(file)
+
+        // attribue l'url à notre image
+        imageProfil.style.display = 'inline'
+        imageProfil.src = imgUrl
+    }
+})
 
 
 
