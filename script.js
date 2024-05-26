@@ -2,13 +2,24 @@
 const inputImage = document.querySelector('.inputImage')
 const imageProfil = document.querySelector('.previewImage')
 
+const inputsText = document.querySelectorAll('input')
+const genre = document.querySelector('select')
+const bio = document.querySelector('textarea')
+
+const btnCreer = document.querySelector('.creer')
+
+const form = document.querySelector("form")
+
+let imgUrl
+
+
 inputImage.addEventListener('change', (e) => {
 
     const file = e.target.files[0]
 
     if(file){
         // créer l'url de l'image
-        const imgUrl = URL.createObjectURL(file)
+        imgUrl = URL.createObjectURL(file)
 
         // attribue l'url à notre image
         imageProfil.style.display = 'inline'
@@ -17,7 +28,20 @@ inputImage.addEventListener('change', (e) => {
 })
 
 
+// == selection des valeurs 
 
+
+btnCreer.addEventListener('click', (e) => {
+
+    e.preventDefault()
+
+    const prenom = inputsText[0].value
+    const nom = inputsText[1].value
+    const bioText = bio.value
+    const sexeValue = genre[genre.selectedIndex].value
+
+    
+})
 
 
 
