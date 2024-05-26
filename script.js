@@ -35,10 +35,25 @@ btnCreer.addEventListener('click', (e) => {
 
     e.preventDefault()
 
+    //recuperation des infos
     const prenom = inputsText[0].value
     const nom = inputsText[1].value
     const bioText = bio.value
     const sexeValue = genre[genre.selectedIndex].value
+
+    // créations des éléments
+    const divContact = document.createElement('div')
+
+
+    //left
+    const divLeftContact = document.createElement('div')
+    const imgLeft = document.createElement('img')
+    imgLeft.classList.add('image-left')
+    imgLeft.src = imgUrl
+    divLeftContact.appendChild(imgLeft)
+
+    // right
+    const divRightContact = document.createElement('div')
 
     
 })
