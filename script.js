@@ -11,7 +11,10 @@ const btnCreer = document.querySelector('.creer')
 const contactList = document.querySelector('.content-list')
 contactList.classList.add('content-list')
 
+const btnReinit = document.querySelector('.reinit')
+
 const form = document.querySelector("form")
+
 
 let imgUrl
 
@@ -91,7 +94,27 @@ btnCreer.addEventListener('click', (e) => {
     divContact.appendChild(divRightContact)
 
     contactList.appendChild(divContact)
+
+
+    const btnCroix = document.querySelector('.btnCroix')
+
+    btnCroix.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    const lastParent = btnCroix.parentNode.parentNode
+   
+    const global = lastParent.parentNode
+
+    global.removeChild(lastParent)
+
+    })
  
+})
+
+
+btnReinit.addEventListener('click', (e) => {
+    e.preventDefault()
+    form.reset()
 })
 
 
