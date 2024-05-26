@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Repertoire de contact</h1>
+    <div class="container">
+        <div class="content">
+
+            <div class="left">
+                <h2>Formulaire de contact</h2>
+
+                <form action="">
+                    <div class="item">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom">
+                    </div>
+                    <div class="item">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom">
+                    </div>
+                    <div class="item">
+                        <label for="sexe">Sexe</label>
+                        <select id="sexe">
+                            <option value="M">M</option>
+                            <option value="F">F</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="bio">Sexe</label>
+                        <textarea name="" id="bio">
+                        </textarea>
+                    </div>
+                    <div class="image">
+                        <div>
+                            <input type="file" accept=".jpg, .png, .gif" hidden id="img" class="inputImage">
+                            <label for="img" class="btn-image">choisir un fichier</label>
+                        </div>
+                        <div class="profil">
+                            <img src="" alt="" class="previewImage">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="buttons">
+                    <button class="creer">Créer</button>
+                    <button class="reinit">Réinit</button>
+                </div>
+            </div>
+
+            <div class="right">
+                <h2>Liste de contact</h2>
+                <div class="content-list">
+                    <div class="contact">
+                        <div class="leftContact">
+                            <img src="./images/peron1.jpg" alt="" class="image-left">
+                        </div>
+                        <div class="rightContact">
+                            <div class="btnCroix">
+                                <img src="./images/croix.png" alt="" class="image-croix">
+                            </div>
+                            <label class="textLabel">Prenom</label> <label class="textLabel">Nom</label>
+                            <p class="textLabel">M</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla fugit quam quo laborum sequi tempore harum aperiam aut amet labore vero</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

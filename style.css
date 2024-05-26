@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #eeeeee;
+}
+
+h1,h2{
+    background-color: #0099CC;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* .container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.content{
+    width: 95%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+}
+
+
+h2{
+    text-align: center;
+}
+
+.left{
+    border: 1px solid silver;
+    
+}
+
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right{
+    border: 1px solid silver;
+    
+}
+
+
+.previewImage{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    display: none;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    color: #0099CC;
+}
+
+input,select{
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+textarea{
+    border: none;
+    outline: none;
+    padding: 5px;
+    height: 80px;
+}
+
+.image{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.btn-image{
+    display: inline-block !important;
+    background-color: #bbbbbb;
+    color: black;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+button{
+    padding: 10px;
+    width: 150px;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.creer{
+    background-color: #0099CC;
+}
+
+.reinit{
+    background-color: rgb(223, 102, 102);
+}
+
+
+.image-left{
+    display: inline;
+}
+
+/* ========== css et js ============ */
+
+.contact{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #94b0d4;
+    border-left: 1px solid #94b0d4;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+
+.leftContact{
+}
+
+.image-left{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.btnCroix{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    
+}
+
+.image-croix{
+    width: 100%;
+    height: 100%;
+}
+
+.rightContact{
+    color: #787777;
+}
+
+.textLabel{
+    font-size: 17px;
+    font-weight: 600;
+}
